@@ -1,0 +1,29 @@
+{
+    "name": "Item rating package with jRaty",
+    "description": "Package for item ratings + optional microdata format.",
+    "keywords": ["rating","jraty", "microdata", "seo"],
+    "homepage": "http://github.com/escapeboy/jraty",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Nikola Katsarov",
+            "email": "katsarov@gmail.com",
+            "homepage": "http://katsarov.biz",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.1.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Escapeboy\\Jraty\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
