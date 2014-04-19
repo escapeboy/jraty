@@ -1,5 +1,5 @@
 {
-    "name": "Item rating package with jRaty",
+    "name": "escapeboy/jraty",
     "description": "Package for item ratings + optional microdata format.",
     "keywords": ["rating","jraty", "microdata", "seo"],
     "homepage": "http://github.com/escapeboy/jraty",
