@@ -108,3 +108,26 @@ And result will be
 ![alt text](http://wbotelhos.com/raty/lib/images/star-off.png "5")
 
 *Library is accepting only one rating per item from single IP.*
+
+Additional
+----
+Deleting record
+```php
+Jraty::delete($id)
+```
+Adding manual rating
+```php
+$data = array(
+    		'item_id'    => Input::get('item_id'),
+			'score'      => Input::get('score'),
+			'added_on'   => DB::raw('NOW()'),
+			'ip_address' => Request::getClientIp()
+		);
+Jraty::add($data);
+```
+Getting rating data for item
+```php
+$rating = Jraty::get($item_id);
+echo $rating->avg; // avarage score
+echo $rating->votes; // total votes
+```
